@@ -751,7 +751,6 @@
 #       define RADEON_ROP3_PDna             0x00500000
 #       define RADEON_ROP3_P                0x00f00000
 #       define RADEON_ROP3_DPna             0x000a0000
-#       define RADEON_ROP3_D                0x00aa0000
 #       define RADEON_ROP3_DPx              0x005a0000
 #       define RADEON_ROP3_DPo              0x00fa0000
 #       define RADEON_ROP3_DPon             0x00050000
@@ -5066,7 +5065,6 @@
 #define R300_DST_PIPE_CONFIG		                0x170c
 #       define R300_PIPE_AUTO_CONFIG                    (1 << 31)
 #define R300_RB2D_DSTCACHE_MODE		                0x3428
-#define R300_RB2D_DSTCACHE_MODE		                0x3428
 #       define R300_DC_AUTOFLUSH_ENABLE                 (1 << 8)
 #       define R300_DC_DC_DISABLE_IGNORE_PE             (1 << 17)
 #define R300_RB2D_DSTCACHE_CTLSTAT		        0x342c /* use DSTCACHE_CTLSTAT instead */
@@ -5095,7 +5093,6 @@
 #       define R300_SEPARATE_ALPHA_ENABLE               (1 << 1)
 #       define R300_READ_ENABLE                         (1 << 2)
 #define R300_RB3D_ABLENDCNTL			        0x4e08
-#define R300_RB3D_DSTCACHE_CTLSTAT		        0x4e4c
 #define R300_RB3D_COLOROFFSET0			        0x4e28
 #define R300_RB3D_COLORPITCH0			        0x4e38
 #       define R300_COLORTILE                           (1 << 16)
@@ -5120,7 +5117,6 @@
 #       define R300_RED_MASK_EN                         (1 << 2)
 #       define R300_ALPHA_MASK_EN                       (1 << 3)
 #define R300_RB3D_COLOR_CLEAR_VALUE                     0x4e14
-#define R300_RB3D_DSTCACHE_CTLSTAT		        0x4e4c
 #define R300_RB3D_CCTL				        0x4e00
 #define R300_RB3D_DITHER_CTL			        0x4e50
 
@@ -5628,8 +5624,6 @@
 #   define R500_RS_INST_TEX_ADJ				(1 << 25)
 #   define R500_RS_INST_W_CN				(1 << 26)
 
-#define R500_US_FC_CTRL					0x4624
-#define R500_US_CODE_ADDR				0x4630
 #define R500_US_CODE_RANGE 				0x4634
 #define R500_US_CODE_OFFSET 				0x4638
 
