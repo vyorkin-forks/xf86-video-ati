@@ -1174,9 +1174,8 @@ Bool RADEONScreenInit_KMS(SCREEN_INIT_ARGS_DECL)
     front_ptr = info->front_bo->ptr;
 
     if (info->r600_shadow_fb) {
-	info->fb_shadow = calloc(1,
-				 pScrn->displayWidth * pScrn->virtualY *
-				 ((pScrn->bitsPerPixel + 7) >> 3));
+	info->fb_shadow = calloc(pScrn->displayWidth * pScrn->virtualY,
+				 (pScrn->bitsPerPixel + 7) >> 3);
 	if (info->fb_shadow == NULL) {
 	    xf86DrvMsg(pScrn->scrnIndex, X_ERROR,
                        "Failed to allocate shadow framebuffer\n");
